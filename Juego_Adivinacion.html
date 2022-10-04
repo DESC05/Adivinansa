@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<h2>ADIVINANSA</h2>
+<script>
+
+function saltarlinea() {document.write("<br>");document.write("<br>");document.write("<br>")}
+function imprimir(frase) {document.write(frase);saltarlinea();}
+
+var numeroPenasdo = Math.round(Math.random()*10);
+var intento = 3;
+var contador = 1;
+
+
+while (contador <= intento){
+
+    var numeroLanzado = parseInt(prompt("Ingrese el numero entre 0-10"));
+
+if (numeroPenasdo == numeroLanzado){alert("Usted acerto, en el intento " + contador + " el numero pensado era " + numeroPenasdo);break;}
+
+else {alert("Usted fallo");}
+contador++;
+}
+
+if (numeroPenasdo==numeroLanzado){imprimir("usted acerto,en el intento " + contador + " el numero pensado era: " + numeroPenasdo);}
+
+else {imprimir("usted erro, el numero pensado era: " + numeroPenasdo);}
+
+imprimir("fin");
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
